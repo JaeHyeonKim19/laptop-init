@@ -59,7 +59,6 @@ fi
 
 highlighting_repo_url="https://github.com/zsh-users/zsh-syntax-highlighting.git"
 zsh_destination_path="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
-
 # Check if the zsh-syntax-highlighting plugin is already installed
 if [ -d "$zsh_destination_path" ]; then
     echo "zsh-syntax-highlighting plugin is already installed."
@@ -71,8 +70,5 @@ else
     echo "source $zsh_destination_path/zsh-syntax-highlighting.zsh" >> ~/.zshrc
     echo "zsh-syntax-highlighting plugin has been added to ~/.zshrc."
 fi
-
-# Enable syntax highlighting in the current interactive shell
-# source "$zsh_destination_path/zsh-syntax-highlighting.zsh"
 
 echo "laptop init script end. Please restart terminal and Don't forget setting iterm2 preferences(font, coler, etc...)"
